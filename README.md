@@ -62,13 +62,35 @@ O projétil desaparece quando este:
  
 #### Gameplay - Inimigos
 
-A velocidade de todos os inimigos é controlada por uma variavel que aumenta gradualmente ao longo do jogo cada vez que o jogador afunda 10 barcos, ou seja por cada 10 inimigos destruídos esta variavel incremente a velocidade.
+A velocidade de todos os inimigos é controlada por uma variavel que aumenta gradualmente ao longo do jogo cada vez que o jogador afunda 10 barcos, ou seja por cada 10 inimigos destruídos esta variavel incrementa a velocidade **immediatamente**.
 
 Cada inimigo pode variar em largura, com um grau de variabilidade (ver abaixo):
 
 ![Boat Size Variation](figures/BoatSize.png)
 
+##### Frequência dos Inimigos
 
+Cada inimigo tem que ser **obrigatóriamente** criado na secção mais a direita do enemy zone. O jogo cria inimigos se todas as condições assinaladas abaixo são verdadeiras:
+
+- Não existe mais do que 4 barcos no enemy zone
+- Passou um valor aleatório de tempo desde a destruíção do ultimo barco pelo jogador
+
+#### Calculo de Pontos e Leaderboards
+
+O score do jogador é calculado da seguinte forma:
+
+- Por cada segundo que passa no jogo, incrementamos o score por 1
+- Por cada barco destruído o valor do score é inversamente proporcional ao tamanho do barco (ou seja quando mais pequeno é o barco mais pontos dá-se ao jogador):
+	- Tiny Boat: 5 pts
+	- Small Boat: 4 pts
+	- Medium Boat: 3 pts
+	- Large Boat: 2 pts
+	- Huge Boat: 1 pts
+- Por cada 10 barcos afundados, o multiplier dos barcos destruídos incrementa por 1, ou seja a função de barcos destruídos equivale a:
+
+$$ S_{b} = P_{b} * mul $$
+
+onde $ S_{b} $ é o total de score obtido ao abater o barco especifico *b*, $ P_{b} $ é o valor dos pontos associado ao barco *b* e *mul* é a variavel *multiplier* que incrementa por todos os 10 barcos afundados até ao momento do jogo. 
 
 ## Objetivos e Critério de Avaliação
 
