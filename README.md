@@ -1,11 +1,28 @@
 # Projeto Fundamentos de Programação 2022/2023
 
 ## Introdução 
-Todos os grupos devem implementar em Python e PyGame um jogo chamado *Sand Golf*. 
+Todos os grupos devem implementar em Python e PyGame um jogo chamado *Heavy Ordnance*. Este jogo necessita **obrigatóriamente** interface gráfica em PyGame.
 
 ## Contexto do Jogo
 
+Neste jogo o jogador controla a artilharia de uma base costeira, onde o objetivo é afundar todos os barcos inimigos que se vão aproximando a cada **turno**. O jogo é jogado definindo a velocidade de lançamento do projectil e o angulo do canhão, resultando num movimento *parabólico* no qual o objetivo é encontrar a velocidade e o angulo *certo* para acertar nos vários inimigos no ecrã.
+
 ### Objectivo do Jogo
+
+O objectivo do jogo é *aguentar* o maior numero de tempo possível enquanto este defende a sua zona de controlo dos barcos inimigos. O jogo termina quando o total de 3 barcos inimigos atinge (ou collide) a *zona de controlo* do jogador. 
+
+### Interface
+
+A interface do jogo consiste nos seguintes elementos:
+
+![Interface Principal do Jogo *Heavy Ordnance*](figures/Interface.png)
+
+- **Player Area:** O local onde se encontra a artilharia do jogador
+- **Controllable Canon:** Isto é o canhão que o jogador controla, assim definindo o *angulo* do lançamento do projétil  
+- **Bullet:** Representa o projétil lançado pelo jogador, se este collidir com um barco inimigo este é afundado (i.e. one hit kill)
+- **Enemy Zone:** Representa a area de jogo onde os barcos inimigos se encontram. Estes vão navegando da direita para a esquerda até ao *danger zone*
+- **Danger Zone:** Representa a area de perigo, quando um barco inimigo collide com esta zona o jogador *perde uma vida* e o barco inimigo desaparece
+- **Players Stats:** Representa o score corrente do jogador e o numero de vidas restantes
 
 ### Descrição Técnica
 
