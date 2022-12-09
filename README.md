@@ -41,11 +41,11 @@ O jogo é jogado em tempo real onde o canhão do jogador é controlado pelo movi
 
 O projetil é definido pelas seguintes equações para o vector $ x $ e $ y $:
 
-$$ x = v_{0}t * cos(\theta) $$ 
+$$ x = v_{0}tcos(\theta) $$ 
 
-$$ y = v_{0}t * sin(\theta) - {gt /over 2} $$
+$$ y = v_{0}tsin(\theta) - gt /over 2 $$
 
-
+ 
 
 ## Objetivos e Critério de Avaliação
 
