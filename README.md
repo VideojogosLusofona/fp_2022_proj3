@@ -32,7 +32,7 @@ O jogo deve apresentar uma estrutura semelhante ao projeto anterior. Deve conter
 
 #### Gameplay - Canon
 
-O jogo é jogado em tempo real onde o canhão do jogador é controlado pelo movimento do rato (ou seja mover o rato para a esquerda ou para a direita altera o angulo do canhão). Para disparar o canhão o jogador tem que carregar no botão do rato e pode ficar a carregar para aumentar a sua velocidade (v0) até uma destas condições ser verdadeira:
+O jogo é jogado em tempo real onde o canhão do jogador é controlado pelo movimento do rato (ou seja mover o rato para a esquerda ou para a direita altera o angulo do canhão). Para disparar o canhão o jogador tem que carregar no botão do rato e pode ficar a carregar para aumentar a sua velocidade ($v_{0}$) até uma destas condições ser verdadeira:
 
 - O jogador larga o botão do rato 
 - A velocidade maxima é atingida (definida pelo grupo)
