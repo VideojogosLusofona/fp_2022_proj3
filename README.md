@@ -43,7 +43,7 @@ O projetil é definido pelas seguintes equações para o vector $$ x $$ e $$ y $
 
 $$ x = v_{0} t cos(\theta) $$ 
 
-$$ y = v_{0} t sin(\theta) - \dfrac{gt}{2} $$
+$$ y = v_{0} t sin(\theta) - \dfrac{1}{2}gt^2 $$
 
  
 
