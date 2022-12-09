@@ -88,7 +88,7 @@ O score do jogador é calculado da seguinte forma:
 	- Huge Boat: 1 pts
 - Por cada 10 barcos afundados, o multiplier dos barcos destruídos incrementa por 1, ou seja a função de barcos destruídos equivale a:
 
-$$ S_{b} = P_{b} * mul $$
+$$ S_{b} = P_{b} \times mul $$
 
 onde $S_{b}$ é o total de score obtido ao abater o barco especifico *b*, $P_{b}$ é o valor dos pontos associado ao barco *b* e *mul* é a variavel *multiplier* que incrementa por todos os 10 barcos afundados até ao momento do jogo.
 
