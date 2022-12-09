@@ -79,8 +79,8 @@ Cada inimigo tem que ser **obrigatóriamente** criado na secção mais a direita
 
 O score do jogador é calculado da seguinte forma:
 
-- Por cada segundo que passa no jogo, incrementamos o score por 1
-- Por cada barco destruído o valor do score é inversamente proporcional ao tamanho do barco (ou seja quando mais pequeno é o barco mais pontos dá-se ao jogador):
+- Por cada segundo que passa no jogo, incrementamos o score por 1 ($S_{t})
+- Por cada barco destruído o valor do score é inversamente proporcional ao tamanho do barco ($P_{b}$):
 	- Tiny Boat: 5 pts
 	- Small Boat: 4 pts
 	- Medium Boat: 3 pts
@@ -90,7 +90,10 @@ O score do jogador é calculado da seguinte forma:
 
 $$ S_{b} = P_{b} * mul $$
 
-onde $S_{b}$ é o total de score obtido ao abater o barco especifico *b*, $P_{b}$ é o valor dos pontos associado ao barco *b* e *mul* é a variavel *multiplier* que incrementa por todos os 10 barcos afundados até ao momento do jogo. 
+onde $S_{b}$ é o total de score obtido ao abater o barco especifico *b*, $P_{b}$ é o valor dos pontos associado ao barco *b* e *mul* é a variavel *multiplier* que incrementa por todos os 10 barcos afundados até ao momento do jogo.
+
+
+Logo o valor total do player score *S* é a soma total de $S_{t}$ e $S_{b}$ ao longo do jogo.
 
 ## Objetivos e Critério de Avaliação
 
