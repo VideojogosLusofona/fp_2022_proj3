@@ -13,7 +13,7 @@ O objectivo do jogo é *aguentar* o maior numero de tempo possível enquanto est
 
 ### Interface
 
-A interface do jogo consiste nos seguintes elementos:
+A interface do jogo consiste numa janela de 1000x380px (1000px largura e 380px altura) com os seguintes elementos:
 
 ![Interface Principal do Jogo *Heavy Ordnance*](figures/Interface.png)
 
