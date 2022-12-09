@@ -75,7 +75,7 @@ Cada inimigo tem que ser **obrigatóriamente** criado na secção mais a direita
 - Não existe mais do que 4 barcos no enemy zone
 - Passou um valor aleatório de tempo desde a destruíção do ultimo barco pelo jogador
 
-#### Calculo de Pontos e Leaderboards
+#### Calculo de Pontos
 
 O score do jogador é calculado da seguinte forma:
 
@@ -94,6 +94,15 @@ onde $S_{b}$ é o total de score obtido ao abater o barco especifico *b*, $P_{b}
 
 
 Logo o valor total do player score $S$ é a soma total de $S_{t}$ e $S_{b}$ ao longo do jogo.
+
+#### Leaderboards
+
+O leaderboard deve guardar as iniciais e score dos 10 melhores jogadores até à data. O jogo deve pedir as iniciais do jogador caso o score obtido no final for maior do que ultimo valor presente no leaderboard.
+
+O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para isso é necessário escrever para um ficheiro os valores destes. Para tal é necessario usar funções de read e write para um ficheiro de texto que irá ser guardado na pasta local do jogo. Funções uteis para ver:
+
+- [Read File](https://www.w3schools.com/python/python_file_open.asp)
+- [Write File](https://www.w3schools.com/python/python_file_write.asp)
 
 ## Objetivos e Critério de Avaliação
 
@@ -127,11 +136,23 @@ Em que _D_ corresponde à nota da discussão e percentagem equitativa de realiza
 
 ### Requisito Mínimo do Projeto
 
+Tudo descrito no enunciado são as funcionalidades minimas para este projeto, e isto inclui:
+
+- Interface de Jogo
+- Sistema de Menus
+- Gameplay - Canon
+- Gameplay - Projecteis
+- Gameplay - Inimigos
+- Leaderboards
 
 ### Pontuação Extra
 
 **Importante**: Façam o minimo requerido primeiro antes de tentarem fazer mais funcionalidades!
 
+- Sistema de Audio
+- Sistema de "Power-Ups"
+- Sistema de Particulas
+- Graficos e Animações mais complexas
 
 ## Entrega
 O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:59** do dia **20 de Janeiro 2023**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
