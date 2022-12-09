@@ -5,7 +5,7 @@ Todos os grupos devem implementar em Python e PyGame um jogo chamado *Heavy Ordn
 
 ## Contexto do Jogo
 
-Neste jogo o jogador controla a artilharia de uma base costeira, onde o objetivo é afundar todos os barcos inimigos que se vão aproximando a cada **turno**. O jogo é jogado definindo a velocidade de lançamento do projectil e o angulo do canhão, resultando num movimento *parabólico* no qual o objetivo é encontrar a velocidade e o angulo *certo* para acertar nos vários inimigos no ecrã.
+Neste jogo o jogador controla a artilharia de uma base costeira, onde o objetivo é afundar todos os barcos inimigos que se vão aproximando deste. O jogo é jogado definindo a velocidade de lançamento do projectil e o angulo do canhão, resultando num movimento *parabólico* no qual o objetivo é encontrar a velocidade e o angulo *certo* para acertar nos vários inimigos no ecrã.
 
 ### Objectivo do Jogo
 
@@ -25,6 +25,25 @@ A interface do jogo consiste numa janela de 1000x380px (1000px largura e 380px a
 - **Players Stats:** Representa o score corrente do jogador e o numero de vidas restantes
 
 ### Descrição Técnica
+
+#### Fluxo do Sistema de Menus
+
+O jogo deve apresentar uma estrutura semelhante ao projeto anterior. Deve conter um start e um game over screen e um leaderboard que apresenta e guarda as pontuações passadas dos jogadores. O jogador deverá ter a opção de sair do jogo (a qualquer momento, mesmo durante o gameplay) de forma eficiente e controlada. No start screen o jogador também deverá ter a opção de visualizar o leaderboard.
+
+#### Gameplay - Canon
+
+O jogo é jogado em tempo real onde o canhão do jogador é controlado pelo movimento do rato (ou seja mover o rato para a esquerda ou para a direita altera o angulo do canhão). Para disparar o canhão o jogador tem que carregar no botão do rato e pode ficar a carregar para aumentar a sua velocidade (v0) até uma destas condições ser verdadeira:
+
+- O jogador larga o botão do rato 
+- A velocidade maxima é atingida (definida pelo grupo)
+
+#### Gameplay - Projétil 
+
+O projetil é definido pelas seguintes equações para o vector $ x $ e $ y $:
+
+$$ x = v_{0}t * cos(\theta) $$ 
+
+$$ y = v_{0}t * sin(\theta) - {gt /over 2} $$
 
 
 
