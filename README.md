@@ -47,8 +47,28 @@ $$ y = y_{0} + v_{0} t sin(\theta) - \dfrac{1}{2}gt^2 $$
 
 Onde $x_{0}$ e $y_{0}$ são as posições iniciais de *x* e *y* respectivamente, $v_{0}$ é a velocidade inicial do projétil, *t* é o tempo, $\theta$ é o ângulo do canhão e *g* é a força gravita que é igual a *9.8*.
 
+O projétil desaparece quando este:
 
+- Collide com o chão
+- Collide com um barco inimigo
+- Vai para além da largura definida do ecrã
+
+##### Frequência de Disparo
+
+É importante considerar a frequência do disparo e o tempo de recarga neste jogo, ou seja o jogador só consegue disparar se todas estas condições são verdadeiras:
+
+- Passou 1s desde o ultimo disparo
+- Não há mais do que 2 projéteis em jogo
  
+#### Gameplay - Inimigos
+
+A velocidade de todos os inimigos é controlada por uma variavel que aumenta gradualmente ao longo do jogo cada vez que o jogador afunda 10 barcos, ou seja por cada 10 inimigos destruídos esta variavel incremente a velocidade.
+
+Cada inimigo pode variar em largura, com um grau de variabilidade (ver abaixo):
+
+![Boat Size Variation](figures/BoatSize.png)
+
+
 
 ## Objetivos e Critério de Avaliação
 
