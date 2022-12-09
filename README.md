@@ -93,7 +93,7 @@ $$ S_{b} = P_{b} * mul $$
 onde $S_{b}$ é o total de score obtido ao abater o barco especifico *b*, $P_{b}$ é o valor dos pontos associado ao barco *b* e *mul* é a variavel *multiplier* que incrementa por todos os 10 barcos afundados até ao momento do jogo.
 
 
-Logo o valor total do player score *S* é a soma total de $S_{t}$ e $S_{b}$ ao longo do jogo.
+Logo o valor total do player score $S$ é a soma total de $S_{t}$ e $S_{b}$ ao longo do jogo.
 
 ## Objetivos e Critério de Avaliação
 
