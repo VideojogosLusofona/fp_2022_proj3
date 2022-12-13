@@ -79,7 +79,7 @@ Cada inimigo tem que ser **obrigatóriamente** criado na secção mais a direita
 
 O score do jogador é calculado da seguinte forma:
 
-- Por cada segundo que passa no jogo, incrementamos o score por 1 ( $S_{t} )
+- Por cada segundo que passa no jogo, incrementamos o score por 1 ( $S_{t}$ )
 - Por cada barco destruído o valor do score é inversamente proporcional ao tamanho do barco ( $P_{b}$ ):
 	- Tiny Boat: 5 pts
 	- Small Boat: 4 pts
