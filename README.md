@@ -155,7 +155,7 @@ Tudo descrito no enunciado são as funcionalidades minimas para este projeto, e 
 - Graficos e Animações mais complexas
 
 ## Entrega
-O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:59** do dia **20 de Janeiro 2023**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
+O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:59** do dia **16 de Janeiro 2023**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
 
 -   Pasta escondida `.git` com o repositório Git local do projeto.
 -   Pasta do projeto, contendo os ficheiros todos deste.
